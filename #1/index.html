@@ -9,28 +9,25 @@
 <body>
     <div class="page">
 
-        <div class="screen" id="first-screen">
+        <div class="screen active" id="start-screen">
 
             <h1>
                 Quiz Time!
             </h1>
             <p>test your knowledge with these fun question</p>
 
-            <button id="start-quiz">Start quiz</button>
+            <button id="start-btn">Start quiz</button>
 
         </div>
-        <div class="screen" id="question">
+        <div class="screen" id="quiz-screen">
 
-            <p>Question</p>
+            <p id="question-text">Question</p>
             <div class="score-container"">
-                <p>question <span>0</span> of <span>5</span></p>
-                <p>score</p>
+                <p>question <span id="question">0</span> of <span id="total-questions">0</span></p>
+                <p>score: <span id="score"></span></p>
             </div>
-            <div class="answers">
-                <button class="answer-btn">not an answer</button>
-                <button class="answer-btn">not an answer</button>
-                <button class="answer-btn">not an answer</button>
-                <button class="answer-btn">the answer</button>
+            <div id="answers">
+                
             </div>
 
             <div class="progress-bar">
@@ -38,19 +35,20 @@
             </div>
         </div>
 
-        <div class="screen active" id="end">
+        <div class="screen " id="result-screen">
 
             <h1>Quiz Results</h1>
 
             <div class="final-res">
 
-                <p class="final-score">you scored <span>0</span> of <span>5</span></p>
-                <p class="message">you are idiot</p>
+                <p class="final-score">you scored <span id="final-score">0</span> of <span id="max-score">5</span></p>
+                <p id="message"></p>
             </div>
-            <button class="restart-btn">Restart Quiz</button>
+            <button id="restart-btn">Restart Quiz</button>
             
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
