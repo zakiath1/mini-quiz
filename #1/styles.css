@@ -32,12 +32,12 @@ body{
     align-items: center;
     justify-content: center;
 }
-#first-screen h1{
+#start-screen h1{
     font-size: 3rem;
     color: var(--primary);
 
 }
-#first-screen p{
+#start-screen p{
     font-size: 1.4rem;
 }
 .screen{
@@ -51,7 +51,7 @@ body{
     height: 80%;
     justify-content: space-evenly;
 }
-#question{
+#quiz-screen{
     height: 100%;
     gap: 9px;
 }
@@ -62,7 +62,7 @@ body{
     padding: 0 15px;
     width: 100%;
 }
-.answers{
+#answers{
     width: 100%;
     margin-top: 15px;
     height: 100%;
@@ -73,6 +73,7 @@ body{
 }
 .answer-btn{
     background-color: var(--answer-background);
+    color: #333;
     width: 80%;
     border-radius: 1rem;
     padding: 10px;
@@ -108,10 +109,10 @@ body{
 }
 .progress{
     height: 100%;
-    width: 20%;
+    width: 0%;
     background-color: #e86a33;
 }
-.end h1{
+.result-screen h1{
     color: var(--primary);
     font-size: 2.3rem;
 }
@@ -129,7 +130,7 @@ body{
 .final-score{
     font-size: 1.3rem;
 }
-.message{
+#message{
     color: var(--primary);
     font-size: 2.3rem;
 }
